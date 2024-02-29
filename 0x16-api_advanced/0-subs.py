@@ -23,6 +23,7 @@ def number_of_subscribers(subreddit):
             'Edg/97.0.1072.62'
         ])
     }
+
     res = requests.get(
         '{}/r/{}/about/.json'.format(BASE_URL, subreddit),
         headers=api_headers,
